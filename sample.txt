@@ -1,0 +1,2 @@
+Writing in Sample.txt file
+line 2 in sample.txt
