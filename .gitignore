@@ -1,8 +1,4 @@
 ai.cpp
 ai1.cpp
-cf.cpp
-cf1.cpp
-lc.cpp
-lc1.cpp
-lcc.cpp
-*.txt
+code_files/
+txt_files/

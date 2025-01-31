@@ -72,7 +72,7 @@
   "cph.general.saveLocation": "",
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
   "workbench.panel.defaultLocation": "bottom",
-  "workbench.colorTheme": "Ayu Mirage",
+  "workbench.colorTheme": "Ayu Dark Bordered",
   "editor.fontWeight": "100",
   "editor.fontFamily": "consolas",
   // "editor.fontFamily": "Victor Mono",

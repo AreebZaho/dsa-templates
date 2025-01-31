@@ -22,7 +22,7 @@ template <class T>
 using pqg = priority_queue<T, vector<T>, greater<T>>;
 template <typename T, typename S> void smin(S& a, const T& b) { if (a > b) a = b; }
 template <typename T, typename S> void smax(S& a, const T& b) { if (a < b) a = b; }
-const i32 MOD = 1000000007;
+const i32 MOD = 1000000007, MOD1 = 998244353;
 #define f1(i, x, y) for (auto i = x; i < y; i++)
 #define f1r(i, y, x) for (auto i = y - 1; i >= x; i--)
 #define trav(a, x) for (auto &a : x)
@@ -46,7 +46,8 @@ template<class T, class V> void _print(pair <T, V> p) { cerr << "{"; _print(p.ff
 template<class T> void _print(vector <T> v) { cerr << "[ "; for (T i : v) { _print(i); cerr << " "; } cerr << "]"; }
 template<class T> void _print(vector <vector <T>> v) { trav(a, v) { cerr << endl; _print(a); } }
 template<class T> void _print(queue <T> v) { queue<T> t; cerr << "[ "; while (!v.empty()) { _print(v.front()); cerr << " "; t.push(v.front()); v.pop(); } cerr << "]"; while (!t.empty()) { v.push(t.front()); t.pop(); } }
-template<class T, class V> void _print(priority_queue <T> pq) { queue<int> q; cerr << "[ "; while (!pq.empty()) { _print(pq.top()); q.push(pq.top()); pq.pop(); cerr << " "; } cerr << "]"; while (!q.empty()) { pq.push(q.front()); q.pop(); } }
+template<class T> void _print(priority_queue <T> pq) { vector<T> t; cerr << "[ "; while (!pq.empty()) { _print(pq.top()); t.pb(pq.top()); pq.pop(); cerr << " "; } cerr << "]"; for (auto& i : t) { pq.push(i); } }
+template<class T> void _print(priority_queue <T, vector<T>, greater<>> pq) { vector<T> t; cerr << "[ "; while (!pq.empty()) { _print(pq.top()); t.pb(pq.top()); pq.pop(); cerr << " "; } cerr << "]"; for (auto& i : t) { pq.push(i); } }
 template<class T> void _print(unordered_set <T> v) { cerr << "[ "; for (T i : v) { _print(i); cerr << " "; } cerr << "]"; }
 template<class T> void _print(set <T> v) { cerr << "[ "; for (T i : v) { _print(i); cerr << " "; } cerr << "]"; }
 template<class T> void _print(multiset <T> v) { cerr << "[ "; for (T i : v) { _print(i); cerr << " "; } cerr << "]"; }
