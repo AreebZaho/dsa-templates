@@ -1,4 +1,6 @@
 ai.cpp
 ai1.cpp
-code_files/
-txt_files/
+c1.cpp
+c2.cpp
+c3.cpp
+*.txt
